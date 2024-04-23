@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>Secure Web Form</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Create an Account</h2>
+    <form id="registrationForm" action="#" method="post">
+        <div class="input-group">
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="firstName">First Name</label>
+            <span class="error" id="firstNameError"></span>
+        </div>
+        <div class="input-group">
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="lastName">Last Name</label>
+            <span class="error" id="lastNameError"></span>
+        </div>
+        <div class="input-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email">Email ID</label>
+            <span class="error" id="emailError"></span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" name="password" required>
+            <label for="password">Password</label>
+            <span class="error" id="passwordError"></span>
+        </div>
+        <div class="input-group">
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <span class="error" id="confirmPasswordError"></span>
+        </div>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
